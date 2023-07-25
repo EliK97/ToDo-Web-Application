@@ -1,9 +1,36 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+const passport = require('passport');
+
+router.get('/auth/google', passport.authenticate(
+  
+  'google',
+  {
+   
+    scope: ['profile', 'email'],
+  }
+))
+
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.redirect('/movies');
 });
+
+
+router.get('/oauth2callback', passport.authenticate(
+  'google',
+  {
+    successRedirect: '/movies',
+    failureRedirect: '/movies'
+  }
+));
+
+
+router.get('/logout', function(req, res){
+  req.logout(function() {
+    res.redirect('/movies');
+  });
+});
+
 
 module.exports = router;
