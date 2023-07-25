@@ -13,22 +13,22 @@ router.get('/auth/google', passport.authenticate(
 ))
 
 router.get('/', function(req, res, next) {
-  res.redirect('/movies');
+  res.redirect('/todos');
 });
 
 
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect: '/movies',
-    failureRedirect: '/movies'
+    successRedirect: '/todos',
+    failureRedirect: '/todos'
   }
 ));
 
 
 router.get('/logout', function(req, res){
   req.logout(function() {
-    res.redirect('/movies');
+    res.redirect('/todos');
   });
 });
 

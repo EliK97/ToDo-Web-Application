@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema
 
-const reviewSchema = new Schema({
+const agendaSchema = new Schema({
     content: {
         type: String,
         required: true

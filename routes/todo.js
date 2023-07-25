@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const todosCtrl = require('../controllers/movies');
+const todosCtrl = require('../controllers/todo');
 const ensureLoggedIn = require('../config/ensureLoggedIn');
 	
 
