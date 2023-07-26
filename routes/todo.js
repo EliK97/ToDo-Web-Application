@@ -16,5 +16,8 @@ router.post('/',todosCtrl.create);
 router.delete('/:id', todosCtrl.delete);
 
 router.post('/', ensureLoggedIn, todoCtrl.create);
+
+router.post('/todos/:id/review')
+
 	
 module.exports = router;
