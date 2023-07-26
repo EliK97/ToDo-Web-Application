@@ -1,26 +1,15 @@
-const todoSchema = new Schema({
-    
-    nowShowing: { type: Boolean, default: false },
-    
-    todoList: [todoListSchema]
-  }, {
-    timestamps: true
-  });
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const todoSchema = new Schema({   
+  title: { type: String, required: true },
+  description: String,
+  dueDate: Date,  
+}, {
+  timestamps: true
+});
   
+module.exports = mongoose.model('ToDo',todoSchema);
 
 
-const todoListSchema = new Schema({
-    content: {
-      type: String,
-      required: true
-    },
-    completed: {
-      type: Number,
-      min: 1,
-      max: 5,
-      default: 5
-    }
-  }, {
-    timestamps: true
-  });
 

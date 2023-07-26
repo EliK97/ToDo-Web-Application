@@ -2,10 +2,9 @@ const express = require('express');
 const router = express.Router();
 
  
- router.get('/', function(req, res, next) {
-    console.log('i am here');
-    res.send('respond with a resource');
-  });
- 
+// All actual paths start with "/todos"
+const todosCtrl = require('../controllers/todos');
+
+router.get('/',todosCtrl.index);
 
 module.exports = router;
