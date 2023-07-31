@@ -7,7 +7,7 @@ Run npm start dev
 
 AAU , you are able to add task 
 AAU, you are able to add categories
-AAU , you are able
+AAU , you are able add Goals
 
 # Languagues Used 
 CSS
