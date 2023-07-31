@@ -1,0 +1,21 @@
+<%- include('../partials/header') %>
+
+    <h1> New Category </h1>
+    <ul>
+      <% category.forEach(function(c) { %>
+        <li>
+          <%= c.title %>
+            - 
+        
+          <form action="/category/<%= c.id %>?_method=DELETE"
+            class="delete-form" method="POST">
+            <button type="submit">X</button>
+          </form>
+        </li>
+      <% }); %>
+    </ul>
+  
+    <a href="/category/new">Add Category </a>
+  
+
+    <%- include('../partials/footer') %>

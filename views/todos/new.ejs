@@ -1,8 +1,21 @@
 <%- include('../partials/header') %>
-
+<ul>
+  <% todos.forEach(function(t) { %>
+    <li>
+      <%= t.title %>
+        - 
+      <%= t.done ? 'done' : 'not done' %>
+      <form action="/todos/<%= t.id %>?_method=DELETE"
+        class="delete-form" method="POST">
+        <button type="submit">X</button>
+      </form>
+    </li>
+  <% }); %>
+</ul>
 <form action="/todos" method="POST" autocomplete="off">
-  <input type="text" name="todo">
-  <button type="submit">Save Todo</button>
+  <input type="text" name="title">
+  <button type="submit">Save Task</button>
+
 </form>
 
 <%- include('../partials/footer') %>

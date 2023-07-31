@@ -1,7 +1,50 @@
-<body>
-    <h1>All Todos</h1>
-    
+<%- include('../partials/header') %>
+<div id="txt"></div>
+
+    <h1> DAILY PLANNER </h1>
+    <ul>
+      <% todos.forEach(function(t) { %>
+        <li>
+          <%= t.title %>
+            - 
+          <%= t.done ? 'done' : 'not done' %>
+          <form action="/todos/<%= t.id %>?_method=DELETE"
+            class="delete-form" method="POST">
+            <button type="submit">X</button>
+          </form>
+        </li>
+      <% }); %>
+    </ul>
+    <div id="nav-column">
+    <a href="/todos/new">Add Task </a>
+    <br></br>
+    <a href="/category/new">Add Category</a>
+    <br></br>
+    <a href="/category/new"> Goals Complete </a>
+    </div>
+    <div id="quote">
+      
+    </div>
+
+
   
-    <a href="/todos/new">Add To-Do</a>
-  </body>
-</html>
+<script>function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+
+}
+startTime()
+</script>
+
+    <%- include('../partials/footer') %>

@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+
+<form action="/category" method="POST" autocomplete="off">
+  <input type="text"name='title'>
+  <select name="workout">
+    <option value="Torso">Torso</option>
+    <option value="Lower">Lower</option>
+    <option value="Back">Torso</option>
+     
+  </select>
+  <select name="travels">
+    <option value="Japan">Japan</option>
+    <option value="Greece">Greece</option>
+    <option value="United Kingdom">United Kingdom</option>
+  </select>
+
+  <select name="motivations">
+    <option value="Health">Health</option>
+    <option value="Reading">Reading</option>
+    <option value="Study">Study</option>
+  </select>
+  <button type="submit">Save Category</button>
+
+</form>
+
+<%- include('../partials/footer') %>

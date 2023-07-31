@@ -1,8 +1,100 @@
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/99f65139-2875-429e-a879-ccbc5a4afca5/d86yqnf-9694f120-bb50-4068-be0c-dbd4278d60ff.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzk5ZjY1MTM5LTI4NzUtNDI5ZS1hODc5LWNjYmM1YTRhZmNhNVwvZDg2eXFuZi05Njk0ZjEyMC1iYjUwLTQwNjgtYmUwYy1kYmQ0Mjc4ZDYwZmYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.DW3i66afRepCaolGl-VEaSrUpKCBH70yVliBbK9_a-o');
+  background-size: cover;
+  height: 100vh;
+  color: yellow;
 }
 
 a {
-  color: #00B7FF;
+  color: yellow;
+  font-weight: bold;
+}
+
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: red;
+}
+	
+li {
+  list-style: none;
+}
+
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+}
+
+.login img {
+  height: 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+nav img{
+border-radius: 0%;
+width: 60px;
+height: 60px;
+}
+
+h1 {
+  color: yellow;
+  text-align: center;
+  
+
+}
+
+#txt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: yellow;
+  height: 50px;
+  width: 50px;
+  font-size: larger;
+  
+  position: absolute;
+}
+
+footer {
+  color: yellow;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#nav-column {
+
+  width: fit-content;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  font-size: larger;
+  
+  
+}
+
+#quote {
+  
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 400px;
+  background-blend-mode: darken;
 }
