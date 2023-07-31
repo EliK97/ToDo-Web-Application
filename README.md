@@ -1,11 +1,15 @@
 # todo-website-
 
 # Setup
-Run nodemon start 
-Install Dependencies
+Run npm start dev
 
 # Program 
 
 AAU , you are able to add task 
 AAU, you are able to add categories
 AAU , you are able
+
+# Languagues Used 
+CSS
+EJS
+JavaScript
