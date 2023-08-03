@@ -15,11 +15,11 @@ Clone this repository to your local machine: https://github.com/EliK97/todo-webs
 
 #Usage 
 
-Add a Task / Category : Type your task in the input box and press the "Add" button or hit Enter to add the task to the list.
+Add a Task / Category : Type your task in the input box and press the "Add" button or hit 'Add Task ' to add the task to the list.
 
 <img width="495" alt="Screenshot 2023-08-02 at 9 14 06 PM" src="https://github.com/EliK97/todo-website-/assets/136523113/480ab73d-35a1-4112-b047-255057dc9ef7">
 
-Edit a Task: To edit a task, click on the task description, modify the text, and press Enter to save the changes.
+Edit a Task: To edit a task, click on the task description, modify the text, and press ' Update Task ' to save the changes.
 
 <img width="495" alt="Screenshot 2023-08-02 at 9 17 14 PM" src="https://github.com/EliK97/todo-website-/assets/136523113/c701c0bb-24e1-4339-a699-5d52dd4886f9">
 
